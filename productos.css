@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; padding-bottom: 80px; background-color: #f3ece7; color: #3e2723; }
+.menu-fijo { background-color: #4e342e; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+nav ul { list-style: none; display: flex; justify-content: center; padding: 15px; }
+nav a { color: #fff8e1; text-decoration: none; padding: 10px 20px; font-weight: bold; border-radius: 5px; }
+nav a:hover { background-color: #3e2723; }
+.footer-fijo { background-color: #3e2723; color: #fff8e1; position: fixed; bottom: 0; width: 100%; display: flex; justify-content: space-between; padding: 15px 30px; }
+.redes a { color: #ffcc80; text-decoration: none; margin-left: 15px; }
+
+/* Grid de Productos */
+main { padding: 20px; max-width: 1000px; margin: auto; }
+.catalogo { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+.producto { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.08); text-align: center; border-top: 4px solid #8d6e63; transition: transform 0.3s; }
+.producto:hover { transform: translateY(-5px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+.producto h3 { color: #5d4037; margin-bottom: 10px; }
+.producto strong { display: block; margin-top: 15px; color: #d84315; font-size: 1.2em; }
+
+@media (max-width: 768px) {
+    nav ul { flex-direction: column; align-items: center; }
+    .footer-fijo { flex-direction: column; text-align: center; gap: 10px; }
+}

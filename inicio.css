@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding-bottom: 60px; background-color: #f3ece7; color: #3e2723; }
+
+/* Navegación */
+.menu-fijo { background-color: #4e342e; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.3); }
+nav ul { list-style: none; display: flex; justify-content: center; padding: 15px; }
+nav a { color: #fff8e1; text-decoration: none; padding: 10px 20px; font-weight: bold; transition: background 0.3s; border-radius: 5px; }
+nav a:hover { background-color: #3e2723; }
+
+/* Pie de página */
+.footer-fijo { background-color: #3e2723; color: #fff8e1; position: fixed; bottom: 0; width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 15px 30px; }
+.redes a { color: #ffcc80; text-decoration: none; margin-left: 15px; transition: color 0.3s; }
+.redes a:hover { color: #fff; }
+
+/* Contenido */
+main { padding: 20px; max-width: 1000px; margin: auto; }
+.hero { text-align: center; padding: 50px 20px; background-color: #d7ccc8; border-radius: 8px; margin-bottom: 20px; border-bottom: 4px solid #8d6e63; }
+.promociones, .nuevos-productos, .filosofia { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+.tarjeta { background: #ffcc80; color: #3e2723; padding: 15px; border-radius: 5px; font-weight: bold; text-align: center; font-size: 1.1em; }
+.filosofia { display: flex; gap: 20px; }
+.mision h3, .vision h3 { color: #5d4037; margin-bottom: 10px; }
+
+/* Media Query */
+@media (max-width: 768px) {
+    nav ul { flex-direction: column; align-items: center; padding: 10px; }
+    .filosofia { flex-direction: column; }
+    .footer-fijo { flex-direction: column; text-align: center; gap: 10px; }
+}

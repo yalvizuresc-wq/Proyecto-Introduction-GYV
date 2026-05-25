@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aromas - Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+<body>
+    <header class="menu-fijo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Menú</a></li>
+                <li><a href="acerca.html">Acerca de</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="formulario-contenedor">
+            <h2>Ponte en Contacto</h2>
+            <p style="text-align: center; margin-bottom: 20px; color: #666;">¿Dudas sobre nuestro café o pedidos especiales? Escríbenos.</p>
+            <form action="#">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+                <label for="mensaje">Tu mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe aquí..." required></textarea>
+                
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer-fijo">
+        <p>© 2026 Café Aromas.</p>
+        <div class="redes">
+            <a href="#">📘 Facebook</a> <a href="#">📸 Instagram</a> <a href="#">🐦 X</a>
+        </div>
+    </footer>
+</body>
+</html>
